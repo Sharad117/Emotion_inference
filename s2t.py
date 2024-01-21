@@ -11,7 +11,7 @@ def s2t(path):
     sf.write("temp.wav",aud,16000)
 
     o = create(
-        access_key='cZHhnhMzl2t7SJMetozoH1EZZRJ/okXl6EArNbKlCKX93WBfYEqRIQ==',
+        access_key="insert your API key here",
         enable_automatic_punctuation=True)
 
     try:
