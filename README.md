@@ -1,4 +1,1 @@
-The above code requires a fine-tuned model for the text inference. Due to its size, it has been uploaded to google drive, and can be accessed here: 
-https://drive.google.com/drive/folders/1rRrziu-ia6zKuROEC4IMH5fBPXjox9Z8?usp=sharing
-A demonstration of how to run the code can be  found in the test.py file
-See the requirements.txt file for the dependencies
+The above code uses PVCheetah API for audio to text transcription and then uses a simple logistic regression model for inference. The logistic regression model is limited by the lack of datasets for correct distress classification and might give random outputs for them. Currently a 4-gram model is used for the vectorization of the sentences. The hardware interface of the project is still under development.
