@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Input and Text Output Form</title>
+    <link rel="stylesheet" href="../CSS/test.css">
+</head>
+
+<body>
+    <h1>Voice Input and Text Output Form</h1>
+
+    <form id="voiceForm">
+        <label for="voiceInput">Voice Input:</label>
+        <input type="text" id="voiceInput" name="voiceInput" readonly>
+
+        <button type="button" onclick="startSpeechRecognition()">Start Voice Input</button>
+
+        <label for="textOutput">Text Output:</label>
+        <textarea id="textOutput" name="textOutput" rows="4" cols="50" readonly></textarea>
+    </form>
+
+    <script src="../JS/test.js"></script>
+</body>
+
+</html>

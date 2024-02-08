@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinetra Smart Lighting Dashboard</title>
+    <link rel="stylesheet" href="../CSS/index_s.css" />
+    <link rel="stylesheet" href="../CSS/dashboard.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!---------------------------------------------------------- Navigation Bar -------------------------------------------------------->
+    <header>
+        <a href="../../index.html" class="logo"><img src="../Images/Trinetra.png" alt="Trinetralogo" class="logo-img"></a>
+
+        <nav class="nav">
+            <div class="nav-icon">
+            <!--
+                <div class="notification">
+                    <a href="#">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                    </a>
+                </div> 
+            -->
+                <a href="../../index.html" title="Home">
+                    <ion-icon name="home-outline"></ion-icon>
+                </a>
+
+                <a href="../HTML/dashboard.html" title="Dashboard">
+                    <ion-icon name="apps-outline"></ion-icon>
+                </a>
+
+                <a href="#" title="Our Services">
+                    <ion-icon name="construct-outline"></ion-icon>
+                </a>
+
+                <a href="#" title="Resources">
+                    <ion-icon name="document-outline"></ion-icon>
+                </a>
+
+                <a href="../HTML/AboutUS.html" title="About Us">
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                </a>
+
+                <a href="#" title="Login">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container_S" style="display: flex;">
+        <!------------------------------------------------------ Left Side Bar --------------------------------------------------------->
+        <div class="left-sidebar_s">
+            <div class="Dashboard">
+                <h1 class="Dashboard" id="Dashboard_title" style="font-size: 2.5vw">
+                    Dashboard
+                </h1>
+            </div>
+
+            <hr class="your_hr" style="margin-top: 0.5vw;">
+
+            <div class="tab">
+                <div class="tablinks" onclick="openSetting(event, 'yr_info')" id="defaultOpen">
+                    <div class="div_container">
+                        <div id="logo_1" class="logo_s" onclick="toggleActive('logo_1');">
+                            <img src="../Images/Trinetra.png" alt="Trinetralogo" class="logo-img_s" />
+                            <span>
+                                <h3 class="your_info" style="display: inline">Our Information</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="your_hr" />
+                <!------------------------------------------------------ Actual Dashboard -------------------------------------------------->
+                <div class="main_Dashboard">
+                    <div class="tablinks" onclick="openSetting(event, 'Priv')">
+                        <div class="div_container">
+                            <div id="logo_2" class="logo_s" onclick="toggleActive('logo_2');">
+                                <a href="statistics.html" title="Statistics" style="font-size: 1.5rem;">
+                                    <ion-icon name="bar-chart-outline"></ion-icon>
+                                </a>
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Statistics</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tablinks" onclick="openSetting(event, 'Prof_Tag')">
+                        <div class="div_container">
+                            <div id="logo_3" class="logo_s" onclick="toggleActive('logo_3');">
+                                <a href="voice-analysis.html" title="Voice Analysis" style="font-size: 1.5rem;">
+                                    <ion-icon name="mic-outline"></ion-icon>
+                                </a>
+                                <span>
+                                    <h3 class="your_info" style="display: inline"> Voice Analysis</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tablinks" onclick="openSetting(event, 'Publ')">
+                        <div class="div_container">
+                            <div id="logo_4" class="logo_s" onclick="toggleActive('logo_4');">
+                                <a href="maps.html" title="Maps" style="font-size: 1.5rem;">
+                                    <ion-icon name="map-outline"></ion-icon>
+                                </a>
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Map</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tablinks" onclick="openSetting(event, 'Block')">
+                        <div class="div_container">
+                            <div id="logo_5" class="logo_s" onclick="toggleActive('logo_5');">
+                                <a href="alerts.html" title="Alerts" style="font-size: 1.5rem;">
+                                    <ion-icon name="alert-circle-outline"></ion-icon>
+                                </a>
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Alerts</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tablinks" onclick="openSetting(event, 'Lang')">
+                        <div class="div_container">
+                            <div id="logo_6" class="logo_s" onclick="toggleActive('logo_6');">
+                                <!-- <img src="../Images/Trinetra.png" alt="Trinetralogo" class="logo-img_s" /> -->
+                                <a href="helpline.html" title="Helpline" style="font-size: 1.5rem;">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </a>
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Helpline</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 
+                    <div class="tablinks" onclick="openSetting(event, 'Stor')">
+                        <div class="div_container">
+                            <div id="logo_7" class="logo_s" onclick="toggleActive('logo_7');">
+                                <img src="../Images/Trinetra.png" alt="Trinetralogo" class="logo-img_s" />
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Stories</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+                    <hr class="your_hr" style="margin-top: 0.5vw;">
+
+                    <div class="tablinks" onclick="openSetting(event, 'Notif')">
+                        <div class="div_container">
+                            <div id="logo_8" class="logo_s" onclick="toggleActive('logo_8');">
+                                <a href="help.html" title="Help" style="font-size: 1.5rem;">
+                                    <ion-icon name="help-outline"></ion-icon>
+                                </a>
+                                <span>
+                                    <h3 class="your_info" style="display: inline">Help</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="your_hr" style="margin-top: 0.5vw;">
+
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------------ Middle or Right Bar -------------------------------------------------->
+        <div class="mid_bar">
+            <div class="mid_bar_content">
+                <!---------------------------------------------- Our Information------------------------------------------------------->
+                <div id="yr_info" class="div_container_content">
+                    <!-- <h1 class="text-2xl text-left">Our Information</h1>
+                    <br><br> -->
+                    
+                    <section>
+                        <h1 class="text-4xl font-bold mb-4">Innovative Urban Solutions: Enhancing Lives Through Technology</h1>
+                    </section>
+                
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">Welcome to our Information page</h2>
+                        <p class="mb-4">At the crossroads of technological advancement and societal well-being, our innovative solution seeks to redefine how we experience and safeguard public spaces.</p>
+                    </section>
+                
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">Unlocking Potential with Automated Street Lights</h2>
+                        <p class="mb-4">Imagine a world where street lights aren't just sources of illumination but smart, energy-efficient guardians of our urban landscapes. Our automated street lights, powered by motion sensors and state-of-the-art LED technology, are the pioneers of energy conservation.</p>
+                        <p class="mb-4">They adapt to real-time environmental conditions, activating only when needed and significantly reducing both energy consumption and maintenance costs.</p>
+                    </section>
+                
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">Fortifying Public Safety with Advanced Security Measures</h2>
+                        <p class="mb-4">Beyond energy conservation, our system integrates a revolutionary security solution triggered by a simple push of a button. The magic unfolds as the system initiates audio recording, swiftly processed in real-time. Distress signals or alarming phrases prompt automated alerts to law enforcement, ensuring swift responses to potential threats or emergencies.</p>
+                    </section>
+                
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">A Balancing Act: Privacy Protection at Its Core</h2>
+                        <p class="mb-4">While championing security measures, we understand the importance of privacy. Our system selectively triggers alerts based on specific distress signals, striking a delicate balance between efficacy and privacy preservation. It's a testament to our commitment to fortifying security without compromising individual rights.</p>
+                    </section>
+                
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">The Future Unveiled: Empowering Communities</h2>
+                        <p class="mb-4">This interconnected network of automated street lights and advanced security solutions heralds a new era in urban infrastructure management. Beyond mere functionality, it empowers communities, fostering safer, more sustainable public spaces. It's not just about technology; it's about enhancing the overall quality of life.</p>
+                    </section>
+                
+                    <!-- Add more sections here with appropriate Tailwind classes -->
+                
+                    <section>
+                        <p class="mb-4">Join us on this journey as we highlight the transformative power of integrating advanced technologies into urban landscapes. Together, let's pave the way to a progressive and safer future.</p>
+                    </section>
+                
+
+                    <br><br>
+
+                </div>
+
+                <!---------------------------------------------- Statistics------------------------------------------------------->
+                <div id="Priv" class="div_container_content">
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">Smart Street Lights: A Sustainable Solution</h2>
+                        <p class="mb-4">Through the implementation of smart street lights, our data reflects a substantial decrease in energy consumption, fostering a more sustainable and cost-effective urban environment. Furthermore, the system demonstrates a significant reduction in maintenance needs, ensuring prolonged operational efficiency and minimal disruptions in public spaces.</p>
+                    </section>
+                    
+                    <br>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc; margin-right: 10px;" src="https://thingspeak.com/apps/matlab_visualizations/20199?height=auto&width=auto"></iframe>
+                    
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/45572/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+                    </div>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/45572/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/45572/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                    </div>
+                    
+                    
+                    
+                </div>
+
+                <!---------------------------------------------- Voice------------------------------------------------------->
+                <div>
+                    <div id="Prof_Tag" class="div_container_content">
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-bold mb-2">Empowering Urban Safety</h2>
+                            <p class="mb-4">Our system accepts voice input, swiftly analyzing it for signs of distress or emergencies. If the need for assistance is detected, an automated alert is triggered, ensuring rapid response from law enforcement authorities. This seamless integration of voice processing adds an extra layer of security to our innovative solution, prioritizing the well-being of communities.</p>
+                        </section>
+
+                        <br>
+
+                        <section id="Voice">
+                            <form id="voiceForm">
+                                <label for="voiceInput">Voice Input:</label>
+                                <input type="text" id="voiceInput" name="voiceInput" readonly>
+                        
+                                <button type="button" onclick="startSpeechRecognition()">Start Voice Input</button>
+                        <br>
+                                <label for="textOutput">Text Output:</label>
+                                <textarea id="textOutput" name="textOutput" rows="4" cols="50" readonly></textarea>
+                            </form>
+    
+                        </section>
+                    </div>
+
+                </div>
+
+            
+
+
+                <!---------------------------------------------- Map------------------------------------------------------->
+                <div id="Publ" class="div_container_content">
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-2">Map The Location</h2>
+                        <p class="mb-4">Our system goes beyond detection by providing a dynamic map pinpointing the exact location of any security issues. This feature enhances situational awareness for law enforcement, enabling swift responses to incidents and ensuring the safety of the community. The interactive map functionality is an integral part of our commitment to effective security management in urban spaces.</p>
+                    </section>
+                    <!-- ********************************************MAAP******************************************** -->
+                    <input id="btn" value="random location" type="button" />
+<div id="map"></div>
+<!-- Replace the value of the key parameter with your own API key. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap" async defer></script>
+                </div>
+
+                <!---------------------------------------------- Alerts------------------------------------------------------->
+                <div id="Block" class="div_container_content">
+                    <h1 class="text-3xl font-bold mb-6">Swift Alerts: Revolutionizing Urban Safety</h1>
+                
+                        <section class="mb-8">
+                            <h2 class="text-xl font-semibold mb-4">Groundbreaking Alert Mechanism</h2>
+                            <p class="mb-4">In a paradigm shift towards enhanced security, our system introduces a groundbreaking alert mechanism. When triggered, be it by distress signals or alarming phrases, our automated alert system comes to life, notifying law enforcement authorities in real-time.</p>
+                        </section>
+                
+                        <section class="mb-8">
+                            <h2 class="text-xl font-semibold mb-4">Instant Response, Proactive Security</h2>
+                            <p class="mb-4">The paramount goal of our alert system is to bridge the gap between detection and intervention. In instances where help is urgently needed, our technology ensures law enforcement is promptly notified, expediting response times and fostering a proactive approach to urban safety.</p>
+                        </section>
+                
+                        <section class="mb-8">
+                            <h2 class="text-xl font-semibold mb-4">Seamlessly Integrated Notifications</h2>
+                            <p class="mb-4">Our alert system seamlessly integrates with law enforcement protocols, providing crucial information on the nature and location of potential threats. This seamless flow of data empowers authorities to make informed decisions swiftly, mitigating risks and ensuring the safety of the community.</p>
+                        </section>
+                
+                        <section class="mb-8">
+                            <h2 class="text-xl font-semibold mb-4">Customized for Privacy and Precision</h2>
+                            <p class="mb-4">Acknowledging the importance of privacy, our system is meticulously designed to trigger alerts only in response to specific distress signals or alarming words. This precision ensures a focused and effective response, maintaining a delicate balance between security and individual privacy rights.</p>
+                        </section>
+                
+                        <section class="mb-8">
+                            <h2 class="text-xl font-semibold mb-4">Real-time Mapping for Rapid Intervention</h2>
+                            <p class="mb-4">In addition to alerts, our system incorporates real-time mapping, offering a visual representation of the incident's location. This feature aids law enforcement in navigating swiftly to the scene, reducing response times and optimizing their efforts in addressing security concerns.</p>
+                        </section>
+                
+                        <section class="mb-8">
+                            <h2 class="text-xl font-semibold mb-4">Empowering Communities Through Technology</h2>
+                            <p class="mb-4">Our alert system isn't just about notifying authorities; it's about empowering communities. By leveraging cutting-edge technology, we're redefining urban safety, fostering a sense of security, and ensuring that help is never far away when it's needed the most.</p>
+                        </section>
+                
+                        <section>
+                            <h2 class="text-xl font-semibold mb-4">Conclusion</h2>
+                            <p class="mb-4">In conclusion, our alert system stands as a testament to the transformative power of technology in fortifying urban security. Join us in shaping a safer, more resilient future for communities through proactive and responsive security measures.</p>
+                        </section>
+                </div>
+
+                <!---------------------------------------------- Helpline------------------------------------------------------->
+                <div id="Lang" class="div_container_content">
+                    <h1 class="text-3xl font-bold mb-6">Community Helpline: Connecting You to Support</h1>
+
+        <section class="mb-8">
+            <p class="mb-4">In our commitment to ensuring the safety and well-being of our community, we've established a dedicated helpline for immediate assistance. Whether you're facing a security concern or need help navigating our system, our support team is here for you.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Helpline Contacts:</h2>
+            <ul class="list-disc ml-6 mb-4">
+                <li><strong>Emergency Assistance:</strong> Dial 100 (India)</li>
+                <li><strong>Non-Emergency Line:</strong> [Local Non-Emergency Number]</li>
+                <li><strong>Technical Support:</strong> [Technical Support Hotline]</li>
+                <li><strong>General Inquiries:</strong> [Community Support Email]</li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">How to Reach Us:</h2>
+            <ul class="list-disc ml-6 mb-4">
+                <li><strong>Call:</strong> Dial the relevant helpline number based on your situation.</li>
+                <li><strong>Email:</strong> Drop us an email at [Community Support Email] for general inquiries.</li>
+                <li><strong>Visit:</strong> For in-person assistance, visit our local office at [Office Address].</li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Operating Hours:</h2>
+            <p class="mb-4">Our helpline operates 24/7 to ensure you have access to support whenever you need it. Whether it's an emergency or a general query, our team is ready to assist you around the clock.</p>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-semibold mb-4">Your Safety is Our Priority</h2>
+            <p class="mb-4">At the heart of our helpline is a commitment to your safety and well-being. We encourage you to reach out whenever you need assistance or have concerns. Together, we can foster a safer and more secure community.</p>
+        </section>
+                </div>
+
+                <!---------------------------------------------- Your Information------------------------------------------------------->
+                <!-- 
+                <div id="Stor" class="div_container_content">
+                    <h3>Stories</h3>
+                    <p>London is the capital city of England.</p>
+                </div> 
+            -->
+
+                <!---------------------------------------------- Help------------------------------------------------------->
+                <div id="Notif" class="div_container_content">
+                    <h1 class="text-3xl font-bold mb-6">Navigating Our Website: Your Comprehensive Guide to Assistance</h1>
+
+        <section class="mb-8">
+            <p class="mb-4">Welcome to our website! We understand that technology can sometimes be overwhelming, and we're here to make your experience as seamless as possible. Whether you're exploring our innovative solutions, seeking assistance, or looking for information, this guide will help you navigate through our platform with ease.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Getting Started</h2>
+            <ol class="list-decimal ml-6 mb-4">
+                <li>Homepage Overview
+                    <ul class="list-disc ml-6">
+                        <li>Explore our homepage to get an overview of our offerings.</li>
+                        <li>Navigate through featured sections to discover key features and updates.</li>
+                    </ul>
+                </li>
+                <li>Menu Navigation
+                    <ul class="list-disc ml-6">
+                        <li>Utilize the menu bar to access specific sections: Home, Solutions, Security, and Contact.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Exploring Solutions</h2>
+            <ol class="list-decimal ml-6 mb-4">
+                <li>Automated Street Lights
+                    <ul class="list-disc ml-6">
+                        <li>Discover the benefits and functionalities of our energy-efficient street lighting solutions.</li>
+                        <li>Learn about the technology behind our automated street lights.</li>
+                    </ul>
+                </li>
+                <li>Security Integration
+                    <ul class="list-disc ml-6">
+                        <li>Explore how our security solution enhances public safety.</li>
+                        <li>Understand the process of voice input, audio processing, and real-time alerts.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Seeking Assistance</h2>
+            <ol class="list-decimal ml-6 mb-4">
+                <li>Helpline Information
+                    <ul class="list-disc ml-6">
+                        <li>Find our dedicated helpline contacts for emergency, non-emergency, and technical support.</li>
+                        <li>Know our operating hours and the various ways to reach out for assistance.</li>
+                    </ul>
+                </li>
+                <li>Frequently Asked Questions (FAQs)
+                    <ul class="list-disc ml-6">
+                        <li>Check our FAQs for quick answers to common queries.</li>
+                        <li>Gain insights into troubleshooting common issues.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Contacting Us</h2>
+            <ol class="list-decimal ml-6 mb-4">
+                <li>Contact Form
+                    <ul class="list-disc ml-6">
+                        <li>Utilize our online contact form for specific inquiries.</li>
+                        <li>Receive prompt responses from our support team.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-semibold mb-4">Your Feedback Matters</h2>
+            <p class="mb-4">We value your feedback! If you encounter any challenges or have suggestions for improvement, please let us know. Our commitment is to enhance your experience and provide the best possible assistance.</p>
+            <p class="mb-4">Thank you for choosing us as your trusted technological partner. Together, we're creating safer, more sustainable communities through innovative solutions.</p>
+        </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function toggleActive(id) {
+        var elements = document.querySelectorAll(".logo_s");
+        elements.forEach(function (element) {
+            if (element.id === id) {
+                element.classList.add("active");
+            } else {
+                element.classList.remove("active");
+            }
+        });
+    }
+
+    function openSetting(evt, SettingName) {
+        var i, div_container_content, tablinks;
+        div_container_content = document.getElementsByClassName("div_container_content");
+        for (i = 0; i < div_container_content.length; i++) {
+            div_container_content[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(SettingName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+<script src="../JS/script.js"></script>
+</html>

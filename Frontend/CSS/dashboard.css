@@ -1,0 +1,159 @@
+.left-sidebar_s{
+    display: grid;
+    width: 20vw;
+    padding: 1vw;
+    background-color: #fff0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    overflow: hidden;
+    color: white; 
+}
+.Dashboard{
+    align-self: center;
+    width: 13.5vw;
+    padding: 0.5vw;
+    background-color: #ffffff00;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 1vw;
+} 
+#Dashboard_title {
+    text-align: center;
+    display: flex;
+    margin-left: 1%;
+}
+
+
+.logo_s {
+    margin-left: 1.5vw;
+    display: inline-flex; /*Responsible for getting the logo and text in same line*/
+    align-items: center;
+    width: 21.5vw; /* Set box width to 24.5vw */
+    transition: background-color 0.3s;
+    background-color: transparent; /* Initial transparent background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add pointer cursor for click interaction */
+    border-radius: 10px; /* Add rounded corners */
+    padding-left: 10px;
+}
+
+
+.logo_s.active {
+    background-color:  #ffffff; /* Permanent change to  when clicked */
+    color: #172141; /* Change font color on hover */ 
+}
+
+.logo_s:hover {
+    background-color:#ffffff; /* Change background color on hover */
+    color: #172141; /* Change font color on hover */
+}
+
+.logo-img_s {
+    margin: 0.25vw 0.5vw 0.25vw 0.5vw; /*Top Right Bottom Left*/
+    width: 2rem;
+    height: 2rem;
+}
+
+.your_hr {
+    margin-left: 10px;
+    margin-top: 0.25vw;
+    margin-bottom: 0.25vw;
+}
+
+.your_info {
+    margin-left: 10px;
+    margin-top: 0.25vw;
+    margin-bottom: 0.25vw;
+}
+
+
+.main_Dashboard{
+    width: 25vw;
+    padding: 0.5vw;
+    background-color: #ffffff00;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-left: -0.25vw;
+    margin-top: 0.5vw;
+}
+
+/* ****************************************************************mid bar************************************************* */
+.mid_bar{
+    /* display: flex; */
+    justify-content: left; /* Center content horizontally */
+    width: 81%;
+    padding: 0.5vw;
+    background-color: lightblue;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+.mid_bar_content{
+    /*display: flex;
+    flex-wrap: wrap; /* Allow content to wrap within the container */
+    max-width: 100%; /* Adjust the max-width for responsiveness */
+    padding: 2vw;
+    background-color: #fff3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust shadow values */
+    text-align: center;
+    margin: 2vw;
+}
+
+/* *********************************************Your Information******************************************* */
+#yr_info,
+#Priv,
+#Prof_Tag,
+#Publ,
+#Block,
+#Lang,
+#Notif {
+    text-align: justify;
+    color: #172141;
+}
+
+#Voice{
+    text-align: left
+}
+
+#voiceForm {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Adjusted width */
+    margin: 20px; /* Added margin */
+    align-items: center;
+}
+
+label, input, button, textarea {
+    margin-bottom: 10px;
+}
+
+#voiceInput, #textOutput {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: #172141;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+#map {
+    height: 95%;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
