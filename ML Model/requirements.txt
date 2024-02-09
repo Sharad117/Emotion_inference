@@ -5,3 +5,6 @@
  soundfile
  wave
  struct
+ pandas
+ sklearn
+ pvcheetah
