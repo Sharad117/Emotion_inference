@@ -1,5 +1,7 @@
- faster-whisper
  SentencePiece
  librosa
  torch
  transformers
+ soundfile
+ wave
+ struct
