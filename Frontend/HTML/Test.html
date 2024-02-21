@@ -1,11 +1,17 @@
-<!-- HTML file for the voltmeter -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Voltmeter HTML5 Canvas</title>
-    <script src="../JS/test.js"></script>
+    <title>Speedometer HTML5 Canvas</title>
+    <script src="../JS/test.js"></script> <!-- Assuming this is the path to your JavaScript file -->
 </head>
-<body bgcolor="grey" onload='draw(0);'>
-    <canvas id="voltmeter" width="440" height="220">Canvas not available.</canvas>
+<body onload='draw(0);'>
+    <canvas id="speedometer" width="440" height="220">Canvas not available.</canvas>
+    <div>
+        <form id="drawTemp">
+            <input type="text" id="txtSpeed" name="txtSpeed" value="20" maxlength="2"/>
+            <input type="button" value="Draw" onclick="drawWithInputValue();">
+        </form>
+    </div>  
 </body>
 </html>
