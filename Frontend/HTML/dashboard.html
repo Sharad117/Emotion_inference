@@ -11,7 +11,8 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 </head>
 
@@ -19,11 +20,12 @@
 
     <!---------------------------------------------------------- Navigation Bar -------------------------------------------------------->
     <header>
-        <a href="../../index.html" class="logo"><img src="../Images/Trinetra.png" alt="Trinetralogo" class="logo-img"></a>
+        <a href="../../index.html" class="logo"><img src="../Images/Trinetra.png" alt="Trinetralogo"
+                class="logo-img"></a>
 
         <nav class="nav">
             <div class="nav-icon">
-            <!--
+                <!--
                 <div class="notification">
                     <a href="#">
                         <ion-icon name="notifications-outline"></ion-icon>
@@ -42,17 +44,21 @@
                     <ion-icon name="construct-outline"></ion-icon>
                 </a>
 
+                <!--
                 <a href="#" title="Resources">
                     <ion-icon name="document-outline"></ion-icon>
                 </a>
+                -->
 
                 <a href="../HTML/AboutUS.html" title="About Us">
                     <ion-icon name="information-circle-outline"></ion-icon>
                 </a>
 
+                <!--
                 <a href="#" title="Login">
                     <ion-icon name="person-circle-outline"></ion-icon>
                 </a>
+                -->
 
             </div>
         </nav>
@@ -82,7 +88,7 @@
                 </div>
 
                 <hr class="your_hr" />
-                <!------------------------------------------------------ Actual Dashboard -------------------------------------------------->
+                <!------------------------------------------------------ Actual -------------------------------------------------->
                 <div class="main_Dashboard">
                     <div class="tablinks" onclick="openSetting(event, 'Priv')">
                         <div class="div_container">
@@ -97,6 +103,7 @@
                         </div>
                     </div>
 
+                    <!--
                     <div class="tablinks" onclick="openSetting(event, 'Prof_Tag')">
                         <div class="div_container">
                             <div id="logo_3" class="logo_s" onclick="toggleActive('logo_3');">
@@ -109,6 +116,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
 
                     <div class="tablinks" onclick="openSetting(event, 'Publ')">
                         <div class="div_container">
@@ -149,7 +157,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- 
                     <div class="tablinks" onclick="openSetting(event, 'Stor')">
                         <div class="div_container">
@@ -192,43 +200,62 @@
                 <div id="yr_info" class="div_container_content">
                     <!-- <h1 class="text-2xl text-left">Our Information</h1>
                     <br><br> -->
-                    
+
                     <section>
-                        <h1 class="text-4xl font-bold mb-4">Innovative Urban Solutions: Enhancing Lives Through Technology</h1>
+                        <h1 class="text-4xl font-bold mb-4">Innovative Urban Solutions: Enhancing Lives Through
+                            Technology</h1>
                     </section>
-                
+
                     <section class="mb-8">
                         <h2 class="text-2xl font-bold mb-2">Welcome to our Information page</h2>
-                        <p class="mb-4">At the crossroads of technological advancement and societal well-being, our innovative solution seeks to redefine how we experience and safeguard public spaces.</p>
+                        <p class="mb-4">At the crossroads of technological advancement and societal well-being, our
+                            innovative solution seeks to redefine how we experience and safeguard public spaces.</p>
                     </section>
-                
+
                     <section class="mb-8">
                         <h2 class="text-2xl font-bold mb-2">Unlocking Potential with Automated Street Lights</h2>
-                        <p class="mb-4">Imagine a world where street lights aren't just sources of illumination but smart, energy-efficient guardians of our urban landscapes. Our automated street lights, powered by motion sensors and state-of-the-art LED technology, are the pioneers of energy conservation.</p>
-                        <p class="mb-4">They adapt to real-time environmental conditions, activating only when needed and significantly reducing both energy consumption and maintenance costs.</p>
+                        <p class="mb-4">Imagine a world where street lights aren't just sources of illumination but
+                            smart, energy-efficient guardians of our urban landscapes. Our automated street lights,
+                            powered by motion sensors and state-of-the-art LED technology, are the pioneers of energy
+                            conservation.</p>
+                        <p class="mb-4">They adapt to real-time environmental conditions, activating only when needed
+                            and significantly reducing both energy consumption and maintenance costs.</p>
                     </section>
-                
+
                     <section class="mb-8">
-                        <h2 class="text-2xl font-bold mb-2">Fortifying Public Safety with Advanced Security Measures</h2>
-                        <p class="mb-4">Beyond energy conservation, our system integrates a revolutionary security solution triggered by a simple push of a button. The magic unfolds as the system initiates audio recording, swiftly processed in real-time. Distress signals or alarming phrases prompt automated alerts to law enforcement, ensuring swift responses to potential threats or emergencies.</p>
+                        <h2 class="text-2xl font-bold mb-2">Fortifying Public Safety with Advanced Security Measures
+                        </h2>
+                        <p class="mb-4">Beyond energy conservation, our system integrates a revolutionary security
+                            solution triggered by a simple push of a button. The magic unfolds as the system initiates
+                            audio recording, swiftly processed in real-time. Distress signals or alarming phrases prompt
+                            automated alerts to law enforcement, ensuring swift responses to potential threats or
+                            emergencies.</p>
                     </section>
-                
+
                     <section class="mb-8">
                         <h2 class="text-2xl font-bold mb-2">A Balancing Act: Privacy Protection at Its Core</h2>
-                        <p class="mb-4">While championing security measures, we understand the importance of privacy. Our system selectively triggers alerts based on specific distress signals, striking a delicate balance between efficacy and privacy preservation. It's a testament to our commitment to fortifying security without compromising individual rights.</p>
+                        <p class="mb-4">While championing security measures, we understand the importance of privacy.
+                            Our system selectively triggers alerts based on specific distress signals, striking a
+                            delicate balance between efficacy and privacy preservation. It's a testament to our
+                            commitment to fortifying security without compromising individual rights.</p>
                     </section>
-                
+
                     <section class="mb-8">
                         <h2 class="text-2xl font-bold mb-2">The Future Unveiled: Empowering Communities</h2>
-                        <p class="mb-4">This interconnected network of automated street lights and advanced security solutions heralds a new era in urban infrastructure management. Beyond mere functionality, it empowers communities, fostering safer, more sustainable public spaces. It's not just about technology; it's about enhancing the overall quality of life.</p>
+                        <p class="mb-4">This interconnected network of automated street lights and advanced security
+                            solutions heralds a new era in urban infrastructure management. Beyond mere functionality,
+                            it empowers communities, fostering safer, more sustainable public spaces. It's not just
+                            about technology; it's about enhancing the overall quality of life.</p>
                     </section>
-                
+
                     <!-- Add more sections here with appropriate Tailwind classes -->
-                
+
                     <section>
-                        <p class="mb-4">Join us on this journey as we highlight the transformative power of integrating advanced technologies into urban landscapes. Together, let's pave the way to a progressive and safer future.</p>
+                        <p class="mb-4">Join us on this journey as we highlight the transformative power of integrating
+                            advanced technologies into urban landscapes. Together, let's pave the way to a progressive
+                            and safer future.</p>
                     </section>
-                
+
 
                     <br><br>
 
@@ -236,14 +263,20 @@
 
 
                 <!---------------------------------------------- Statistics------------------------------------------------------->
+
                 <div id="Priv" class="div_container_content">
                     <section class="mb-8">
                         <h2 class="text-2xl font-bold mb-2">Smart Street Lights: A Sustainable Solution</h2>
-                        <p class="mb-4">Through the implementation of smart street lights, our data reflects a substantial decrease in energy consumption, fostering a more sustainable and cost-effective urban environment. Furthermore, the system demonstrates a significant reduction in maintenance needs, ensuring prolonged operational efficiency and minimal disruptions in public spaces.</p>
+                        <p class="mb-4">Through the implementation of smart street lights, our data reflects a
+                            substantial decrease in energy consumption, fostering a more sustainable and cost-effective
+                            urban environment. Furthermore, the system demonstrates a significant reduction in
+                            maintenance needs, ensuring prolonged operational efficiency and minimal disruptions in
+                            public spaces.</p>
                     </section>
-                    
+
                     <br>
 
+                    <!--
                     <div style="display: flex; justify-content: center; align-items: center;">
                         <iframe width="450" height="260" style="border: 1px solid #cccccc; margin-right: 10px;" src="https://thingspeak.com/apps/matlab_visualizations/20199?height=auto&width=auto"></iframe>
                     
@@ -257,13 +290,70 @@
 
                         <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/45572/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                     </div>
-                    
-                    
-                    
+                -->
+
+                    <div class="abc">
+                        <div class="gauge" style="width: 200px">
+                            <div class="percentage"></div>
+                            <div class="mask"></div>
+                            <span class="value"></span>
+                        </div> <br>
+                        <div id="val"></div>
+
+                        <div class="gauge1" style="width: 200px">
+                            <div class="percentage"></div>
+                            <div class="mask"></div>
+                            <span class="value"></span>
+                        </div>
+                        <div id="val1"></div>
+
+                        <div class="gauge2" style="width: 200px">
+                            <div class="percentage"></div>
+                            <div class="mask"></div>
+                            <span class="value"></span>
+                        </div>
+                        <div id="val2"></div>
+                    </div>
+
+                    <div class="def">
+                        <div class="gauge3" style="width: 200px">
+                            <div class="percentage"></div>
+                            <div class="mask"></div>
+                            <span class="value"></span>
+                        </div>
+                        <div id="val3"></div>
+
+                        <div class="gauge4" style="width: 200px">
+                            <div class="percentage"></div>
+                            <div class="mask"></div>
+                            <span class="value"></span>
+                        </div>
+                        <div id="val4"></div>
+
+                        <div class="gauge5" style="width: 200px">
+                            <div class="percentage"></div>
+                            <div class="mask"></div>
+                            <span class="value"></span>
+                        </div>
+                        <div id="val5"></div>
+
+                    </div>
+                    <br>
+
+                    <div class="ghi">
+                        <!--
+                        <div id="weekly_chart" style="width: 900px; height: 500px"></div>
+                        <div id="hourly_chart" style="width: 900px; height: 500px"></div>
+                        -->
+                        <img src="../Images/Hourly Power.png" alt="" height="500px" width="500"> &nbsp &nbsp &nbsp
+                        <img src="../Images/Weekly Power.png" alt="" height="500px" width="500">
+                    </div>
+
                 </div>
 
 
                 <!---------------------------------------------- Voice------------------------------------------------------->
+                <!--
                 <div>
                     <div id="Prof_Tag" class="div_container_content">
                         <section class="mb-8">
@@ -288,103 +378,324 @@
                     </div>
 
                 </div>
+                -->
 
 
                 <!---------------------------------------------- Map------------------------------------------------------->
                 <div id="Publ" class="div_container_content">
                     <section class="mb-8">
                         <h2 class="text-2xl font-bold mb-2">Map The Location</h2>
-                        <p class="mb-4">Our system goes beyond detection by providing a dynamic map pinpointing the exact location of any security issues. This feature enhances situational awareness for law enforcement, enabling swift responses to incidents and ensuring the safety of the community. The interactive map functionality is an integral part of our commitment to effective security management in urban spaces.</p>
+                        <p class="mb-4">Our system goes beyond detection by providing a dynamic map pinpointing the
+                            exact location of any security issues. This feature enhances situational awareness for law
+                            enforcement, enabling swift responses to incidents and ensuring the safety of the community.
+                            The interactive map functionality is an integral part of our commitment to effective
+                            security management in urban spaces.</p>
                     </section>
 
-                    <div id="map" style="width: 900px; height: 580px"></div>
-                    <!-- <button onclick="changeRandomLocation()">Random Location in India</button> -->
+                    <div class="map-container">
+                        <div id="map" style="
+                            width: 90vw;
+                            height: 85vh;
+                            margin-left: 5vw;
+                            margin-right: 10vw;
+                            margin-top: 5vh;
+                          "></div>
+                    </div>
 
-                    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
                     <script>
-                        // Map initialization 
-                        var map = L.map('map').setView([14.0860746, 100.608406], 6);
+                        document.addEventListener("DOMContentLoaded", () => {
+                            const fetchDataAndDisplayMap = async () => {
+                                try {
+                                    console.log("Step 1: Fetching data...");
 
-                        //osm layer
-                        var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                                    const fetchData = async () => {
+                                        const response = await fetch("http://192.168.204.126:1500");
+                                        if (!response.ok) {
+                                            console.warn(
+                                                "Network response was not ok. Using default values."
+                                            );
+                                            return null;
+                                        }
+                                        return response.json();
+                                    };
+
+                                    const data = await Promise.race([
+                                        fetchData(),
+                                        new Promise((resolve) => setTimeout(() => resolve(null), 3000)),
+                                    ]);
+
+                                    if (!data) {
+                                        console.error(
+                                            "Error fetching data: Timeout exceeded. Using default values."
+                                        );
+                                        // Use default values when data cannot be fetched
+                                        const defaultLatitude = 23.387292296244635;
+                                        const defaultLongitude = 85.39213910064379;
+                                        const defaulthumidity = 1;
+                                        const defaultpower = 400;
+                                        const defaultcurrent = 45;
+                                        const defaultvoltage = 10;
+                                        const defaultTemperature = 25.875;
+                                        const defaultdanger = 5;
+
+                                        updateMap({
+                                            latitude: defaultLatitude,
+                                            longitude: defaultLongitude,
+                                            humidity: defaulthumidity,
+                                            power: defaultpower,
+                                            temperature: defaultTemperature,
+                                            current: defaultcurrent,
+                                            voltage: defaultvoltage,
+                                            danger: defaultdanger
+                                        });
+                                    } else {
+                                        console.log("Step 2: Fetched data:", data);
+
+                                        const { latitude, longitude, humidity, power, temperature, current, voltage, danger } = data;
+
+                                        console.log("Step 3: Using values:", {
+                                            latitude, longitude, humidity, power, temperature, current, voltage
+                                        });
+                                        updateMap({
+                                            latitude: latitude || 23.207195,
+                                            longitude: longitude || 72.582511,
+                                            humidity: humidity,
+                                            temperature: temperature || 25.875,
+                                            power: power,
+                                            current: current,
+                                            voltage: voltage,
+                                            danger: danger
+                                        });
+                                    }
+                                } catch (error) {
+                                    console.error("Error fetching data:", error);
+                                }
+                            };
+
+                            const updateMap = (data) => {
+                                const { latitude, longitude, humidity, power, temperature, current, voltage, danger } = data;
+
+                                const map = L.map("map").setView(
+                                    [parseFloat(latitude), parseFloat(longitude)],
+                                    15
+                                );
+
+                                console.log("Step 4: Map created.");
+
+                                L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                                    attribution:
+                                        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                                }).addTo(map);
+
+                                console.log("Step 5: Tile layer added.");
+
+                                const markers = [];
+
+                                const mainMarker = L.marker([
+                                    parseFloat(latitude),
+                                    parseFloat(longitude),
+                                ]).addTo(map);
+                                mainMarker.setIcon(L.icon({ iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png' }));
+                                // Check heart rate and set marker color
+                                if (danger == 1) {
+                                    mainMarker.setIcon(L.icon({ iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png' }));
+                                    // Show a popup at the top of the page
+                                    const helpPopup = document.createElement('div');
+                                    helpPopup.setAttribute('id', 'help-popup');
+                                    helpPopup.textContent = 'This person needs help!';
+                                    document.body.appendChild(helpPopup);
+                                } else {
+                                    mainMarker.setIcon(L.icon({ iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png' }));
+                                }
+
+
+                                mainMarker.bindPopup(
+                                    `
+                              Latitude: ${latitude}<br>
+                              Longitude: ${longitude}<br>
+                              Humidity: ${humidity}<br>
+                              Power: ${power}<br>
+                              current: ${current}<br>
+                              Voltage: ${voltage}<br>
+                              Temperature: ${temperature}<br>
+                              Danger:${danger}<br>
+                            `,
+                                    { className: "custom-popup", id: "1" }
+                                )
+                                    .on("click", function () {
+                                        document.querySelectorAll(".marker-content").forEach((div) => {
+                                            div.style.display = "none";
+                                        });
+
+                                        const correspondingDiv = document.getElementById("1");
+                                        if (correspondingDiv) {
+                                            correspondingDiv.style.display = "block";
+                                            correspondingDiv.classList.toggle('slide-in');
+                                        }
+                                    })
+                                    .on("mouseover", function (e) {
+                                        this.openPopup();
+                                    })
+                                    .on("mouseout", function (e) {
+                                        this.closePopup();
+                                    });
+                                    mainMarker.setIcon(L.icon({ iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png' }));
+                                markers.push(mainMarker);
+
+                                // Additional markers
+                                const additionalMarkers = [
+                                    {
+                                        latitude: parseFloat(latitude) + 0.002,
+                                        longitude: parseFloat(longitude) + 0.002,
+                                        altitude: 0,
+                                        time: "Additional Marker Time 1",
+                                        date: "Additional Marker Date 1",
+                                        temperature: 24,
+                                        heartRate: 85,
+                                        spo2: 97
+                                    },
+                                    {
+                                        latitude: parseFloat(latitude) + 0.007,
+                                        longitude: parseFloat(longitude) + 0.003,
+                                        altitude: 0,
+                                        time: "Additional Marker Time 2",
+                                        date: "Additional Marker Date 2",
+                                        temperature: 26,
+                                        heartRate: 90,
+                                        spo2: 95
+                                    },
+                                    {
+                                        latitude: parseFloat(latitude) - 0.005,
+                                        longitude: parseFloat(longitude) + 0.005,
+                                        altitude: 0,
+                                        time: "Additional Marker Time 3",
+                                        date: "Additional Marker Date 3",
+                                        temperature: 28,
+                                        heartRate: 95,
+                                        spo2: 92
+                                    },
+                                ];
+
+                                additionalMarkers.forEach(
+                                    ({ latitude, longitude, humidity, power, temperature, current, voltage, danger }, index) => {
+                                        const marker = L.marker([latitude, longitude])
+                                            .addTo(map)
+                                            .bindPopup(
+                                                `
+                                  Latitude: ${latitude}<br>
+                                  Longitude: ${longitude}<br>
+                                  Temperature: ${temperature}<br>
+                                  Current: ${current}}<br>
+                                  Voltage: ${voltage}<br>
+                                  Humidity: ${humidity}<br>
+                                  Power: ${power}<br>
+                                  Danger: ${danger}
+                                `,
+                                                { className: "custom-popup", id: `${index + 2}` }
+                                            )
+                                            .on("click", function () {
+                                                document
+                                                    .querySelectorAll(".marker-content")
+                                                    .forEach((div) => {
+                                                        div.style.display = "none";
+                                                    });
+
+                                                const correspondingDiv = document.getElementById(`${index + 2}`);
+                                                if (correspondingDiv) {
+                                                    correspondingDiv.style.display = "block";
+                                                    correspondingDiv.classList.toggle('slide-in');
+                                                }
+                                            })
+                                            .on("mouseover", function (e) {
+                                                this.openPopup();
+                                            })
+                                            .on("mouseout", function (e) {
+                                                this.closePopup();
+                                            });
+
+                                        markers.push(marker);
+                                    }
+                                );
+
+                                console.log("Step 8: Process completed successfully.");
+                            };
+
+                            fetchDataAndDisplayMap();
+
+                            // Fetch data every 5 seconds
+                            setInterval(fetchDataAndDisplayMap, 5000);
                         });
-                        osm.addTo(map);
-
-                        if (!navigator.geolocation) {
-                            console.log("Your browser doesn't support geolocation feature!")
-                        } else {
-                            setInterval(() => {
-                                navigator.geolocation.getCurrentPosition(getPosition)
-                            }, 5000);
-                        }
-
-                        var marker, circle;
-
-                        function getPosition(position) {
-                            // console.log(position)
-                            var lat = position.coords.latitude
-                            var long = position.coords.longitude
-                            var accuracy = position.coords.accuracy
-
-                            if (marker) {
-                                map.removeLayer(marker)
+                    </script>
+                    <script>
+                        function closeContainer() {
+                            var containers = document.getElementsByClassName("marker-content");
+                            for (var i = 0; i < containers.length; i++) {
+                                containers[i].style.display = "none";
                             }
-
-                            if (circle) {
-                                map.removeLayer(circle)
-                            }
-
-                            marker = L.marker([lat, long])
-                            circle = L.circle([lat, long], { radius: accuracy })
-
-                            var featureGroup = L.featureGroup([marker, circle]).addTo(map)
-
-                            map.fitBounds(featureGroup.getBounds())
-
-                            console.log("Your coordinate is: Lat: " + lat + " Long: " + long + " Accuracy: " + accuracy)
                         }
                     </script>
+
                 </div>
 
                 <!---------------------------------------------- Alerts------------------------------------------------------->
                 <div id="Block" class="div_container_content">
                     <h1 class="text-3xl font-bold mb-6">Swift Alerts: Revolutionizing Urban Safety</h1>
-                
-                        <section class="mb-8">
-                            <h2 class="text-xl font-semibold mb-4">Groundbreaking Alert Mechanism</h2>
-                            <p class="mb-4">In a paradigm shift towards enhanced security, our system introduces a groundbreaking alert mechanism. When triggered, be it by distress signals or alarming phrases, our automated alert system comes to life, notifying law enforcement authorities in real-time.</p>
-                        </section>
-                
-                        <section class="mb-8">
-                            <h2 class="text-xl font-semibold mb-4">Instant Response, Proactive Security</h2>
-                            <p class="mb-4">The paramount goal of our alert system is to bridge the gap between detection and intervention. In instances where help is urgently needed, our technology ensures law enforcement is promptly notified, expediting response times and fostering a proactive approach to urban safety.</p>
-                        </section>
-                
-                        <section class="mb-8">
-                            <h2 class="text-xl font-semibold mb-4">Seamlessly Integrated Notifications</h2>
-                            <p class="mb-4">Our alert system seamlessly integrates with law enforcement protocols, providing crucial information on the nature and location of potential threats. This seamless flow of data empowers authorities to make informed decisions swiftly, mitigating risks and ensuring the safety of the community.</p>
-                        </section>
-                
-                        <section class="mb-8">
-                            <h2 class="text-xl font-semibold mb-4">Customized for Privacy and Precision</h2>
-                            <p class="mb-4">Acknowledging the importance of privacy, our system is meticulously designed to trigger alerts only in response to specific distress signals or alarming words. This precision ensures a focused and effective response, maintaining a delicate balance between security and individual privacy rights.</p>
-                        </section>
-                
-                        <section class="mb-8">
-                            <h2 class="text-xl font-semibold mb-4">Real-time Mapping for Rapid Intervention</h2>
-                            <p class="mb-4">In addition to alerts, our system incorporates real-time mapping, offering a visual representation of the incident's location. This feature aids law enforcement in navigating swiftly to the scene, reducing response times and optimizing their efforts in addressing security concerns.</p>
-                        </section>
-                
-                        <section class="mb-8">
-                            <h2 class="text-xl font-semibold mb-4">Empowering Communities Through Technology</h2>
-                            <p class="mb-4">Our alert system isn't just about notifying authorities; it's about empowering communities. By leveraging cutting-edge technology, we're redefining urban safety, fostering a sense of security, and ensuring that help is never far away when it's needed the most.</p>
-                        </section>
-                
-                        <section>
-                            <h2 class="text-xl font-semibold mb-4">Conclusion</h2>
-                            <p class="mb-4">In conclusion, our alert system stands as a testament to the transformative power of technology in fortifying urban security. Join us in shaping a safer, more resilient future for communities through proactive and responsive security measures.</p>
-                        </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Groundbreaking Alert Mechanism</h2>
+                        <p class="mb-4">In a paradigm shift towards enhanced security, our system introduces a
+                            groundbreaking alert mechanism. When triggered, be it by distress signals or alarming
+                            phrases, our automated alert system comes to life, notifying law enforcement authorities in
+                            real-time.</p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Instant Response, Proactive Security</h2>
+                        <p class="mb-4">The paramount goal of our alert system is to bridge the gap between detection
+                            and intervention. In instances where help is urgently needed, our technology ensures law
+                            enforcement is promptly notified, expediting response times and fostering a proactive
+                            approach to urban safety.</p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Seamlessly Integrated Notifications</h2>
+                        <p class="mb-4">Our alert system seamlessly integrates with law enforcement protocols, providing
+                            crucial information on the nature and location of potential threats. This seamless flow of
+                            data empowers authorities to make informed decisions swiftly, mitigating risks and ensuring
+                            the safety of the community.</p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Customized for Privacy and Precision</h2>
+                        <p class="mb-4">Acknowledging the importance of privacy, our system is meticulously designed to
+                            trigger alerts only in response to specific distress signals or alarming words. This
+                            precision ensures a focused and effective response, maintaining a delicate balance between
+                            security and individual privacy rights.</p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Real-time Mapping for Rapid Intervention</h2>
+                        <p class="mb-4">In addition to alerts, our system incorporates real-time mapping, offering a
+                            visual representation of the incident's location. This feature aids law enforcement in
+                            navigating swiftly to the scene, reducing response times and optimizing their efforts in
+                            addressing security concerns.</p>
+                    </section>
+
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Empowering Communities Through Technology</h2>
+                        <p class="mb-4">Our alert system isn't just about notifying authorities; it's about empowering
+                            communities. By leveraging cutting-edge technology, we're redefining urban safety, fostering
+                            a sense of security, and ensuring that help is never far away when it's needed the most.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-4">Conclusion</h2>
+                        <p class="mb-4">In conclusion, our alert system stands as a testament to the transformative
+                            power of technology in fortifying urban security. Join us in shaping a safer, more resilient
+                            future for communities through proactive and responsive security measures.</p>
+                    </section>
                 </div>
 
 
@@ -392,38 +703,46 @@
                 <div id="Lang" class="div_container_content">
                     <h1 class="text-3xl font-bold mb-6">Community Helpline: Connecting You to Support</h1>
 
-        <section class="mb-8">
-            <p class="mb-4">In our commitment to ensuring the safety and well-being of our community, we've established a dedicated helpline for immediate assistance. Whether you're facing a security concern or need help navigating our system, our support team is here for you.</p>
-        </section>
+                    <section class="mb-8">
+                        <p class="mb-4">In our commitment to ensuring the safety and well-being of our community, we've
+                            established a dedicated helpline for immediate assistance. Whether you're facing a security
+                            concern or need help navigating our system, our support team is here for you.</p>
+                    </section>
 
-        <section class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">Helpline Contacts:</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li><strong>Emergency Assistance:</strong> Dial 100 (India)</li>
-                <li><strong>Non-Emergency Line:</strong> [Local Non-Emergency Number]</li>
-                <li><strong>Technical Support:</strong> [Technical Support Hotline]</li>
-                <li><strong>General Inquiries:</strong> [Community Support Email]</li>
-            </ul>
-        </section>
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Helpline Contacts:</h2>
+                        <ul class="list-disc ml-6 mb-4">
+                            <li><strong>Emergency Assistance:</strong> Dial 100 (India)</li>
+                            <li><strong>Non-Emergency Line:</strong> [Local Non-Emergency Number]</li>
+                            <li><strong>Technical Support:</strong> [Technical Support Hotline]</li>
+                            <li><strong>General Inquiries:</strong> [Community Support Email]</li>
+                        </ul>
+                    </section>
 
-        <section class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">How to Reach Us:</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li><strong>Call:</strong> Dial the relevant helpline number based on your situation.</li>
-                <li><strong>Email:</strong> Drop us an email at [Community Support Email] for general inquiries.</li>
-                <li><strong>Visit:</strong> For in-person assistance, visit our local office at [Office Address].</li>
-            </ul>
-        </section>
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">How to Reach Us:</h2>
+                        <ul class="list-disc ml-6 mb-4">
+                            <li><strong>Call:</strong> Dial the relevant helpline number based on your situation.</li>
+                            <li><strong>Email:</strong> Drop us an email at [Community Support Email] for general
+                                inquiries.</li>
+                            <li><strong>Visit:</strong> For in-person assistance, visit our local office at [Office
+                                Address].</li>
+                        </ul>
+                    </section>
 
-        <section class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">Operating Hours:</h2>
-            <p class="mb-4">Our helpline operates 24/7 to ensure you have access to support whenever you need it. Whether it's an emergency or a general query, our team is ready to assist you around the clock.</p>
-        </section>
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Operating Hours:</h2>
+                        <p class="mb-4">Our helpline operates 24/7 to ensure you have access to support whenever you
+                            need it. Whether it's an emergency or a general query, our team is ready to assist you
+                            around the clock.</p>
+                    </section>
 
-        <section>
-            <h2 class="text-xl font-semibold mb-4">Your Safety is Our Priority</h2>
-            <p class="mb-4">At the heart of our helpline is a commitment to your safety and well-being. We encourage you to reach out whenever you need assistance or have concerns. Together, we can foster a safer and more secure community.</p>
-        </section>
+                    <section>
+                        <h2 class="text-xl font-semibold mb-4">Your Safety is Our Priority</h2>
+                        <p class="mb-4">At the heart of our helpline is a commitment to your safety and well-being. We
+                            encourage you to reach out whenever you need assistance or have concerns. Together, we can
+                            foster a safer and more secure community.</p>
+                    </section>
                 </div>
 
 
@@ -438,82 +757,93 @@
 
                 <!---------------------------------------------- Help------------------------------------------------------->
                 <div id="Notif" class="div_container_content">
-                    <h1 class="text-3xl font-bold mb-6">Navigating Our Website: Your Comprehensive Guide to Assistance</h1>
+                    <h1 class="text-3xl font-bold mb-6">Navigating Our Website: Your Comprehensive Guide to Assistance
+                    </h1>
 
-        <section class="mb-8">
-            <p class="mb-4">Welcome to our website! We understand that technology can sometimes be overwhelming, and we're here to make your experience as seamless as possible. Whether you're exploring our innovative solutions, seeking assistance, or looking for information, this guide will help you navigate through our platform with ease.</p>
-        </section>
+                    <section class="mb-8">
+                        <p class="mb-4">Welcome to our website! We understand that technology can sometimes be
+                            overwhelming, and we're here to make your experience as seamless as possible. Whether you're
+                            exploring our innovative solutions, seeking assistance, or looking for information, this
+                            guide will help you navigate through our platform with ease.</p>
+                    </section>
 
-        <section class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">Getting Started</h2>
-            <ol class="list-decimal ml-6 mb-4">
-                <li>Homepage Overview
-                    <ul class="list-disc ml-6">
-                        <li>Explore our homepage to get an overview of our offerings.</li>
-                        <li>Navigate through featured sections to discover key features and updates.</li>
-                    </ul>
-                </li>
-                <li>Menu Navigation
-                    <ul class="list-disc ml-6">
-                        <li>Utilize the menu bar to access specific sections: Home, Solutions, Security, and Contact.</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Getting Started</h2>
+                        <ol class="list-decimal ml-6 mb-4">
+                            <li>Homepage Overview
+                                <ul class="list-disc ml-6">
+                                    <li>Explore our homepage to get an overview of our offerings.</li>
+                                    <li>Navigate through featured sections to discover key features and updates.</li>
+                                </ul>
+                            </li>
+                            <li>Menu Navigation
+                                <ul class="list-disc ml-6">
+                                    <li>Utilize the menu bar to access specific sections: Home, Solutions, Security, and
+                                        Contact.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
 
-        <section class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">Exploring Solutions</h2>
-            <ol class="list-decimal ml-6 mb-4">
-                <li>Automated Street Lights
-                    <ul class="list-disc ml-6">
-                        <li>Discover the benefits and functionalities of our energy-efficient street lighting solutions.</li>
-                        <li>Learn about the technology behind our automated street lights.</li>
-                    </ul>
-                </li>
-                <li>Security Integration
-                    <ul class="list-disc ml-6">
-                        <li>Explore how our security solution enhances public safety.</li>
-                        <li>Understand the process of voice input, audio processing, and real-time alerts.</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Exploring Solutions</h2>
+                        <ol class="list-decimal ml-6 mb-4">
+                            <li>Automated Street Lights
+                                <ul class="list-disc ml-6">
+                                    <li>Discover the benefits and functionalities of our energy-efficient street
+                                        lighting solutions.</li>
+                                    <li>Learn about the technology behind our automated street lights.</li>
+                                </ul>
+                            </li>
+                            <li>Security Integration
+                                <ul class="list-disc ml-6">
+                                    <li>Explore how our security solution enhances public safety.</li>
+                                    <li>Understand the process of voice input, audio processing, and real-time alerts.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
 
-        <section class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">Seeking Assistance</h2>
-            <ol class="list-decimal ml-6 mb-4">
-                <li>Helpline Information
-                    <ul class="list-disc ml-6">
-                        <li>Find our dedicated helpline contacts for emergency, non-emergency, and technical support.</li>
-                        <li>Know our operating hours and the various ways to reach out for assistance.</li>
-                    </ul>
-                </li>
-                <li>Frequently Asked Questions (FAQs)
-                    <ul class="list-disc ml-6">
-                        <li>Check our FAQs for quick answers to common queries.</li>
-                        <li>Gain insights into troubleshooting common issues.</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Seeking Assistance</h2>
+                        <ol class="list-decimal ml-6 mb-4">
+                            <li>Helpline Information
+                                <ul class="list-disc ml-6">
+                                    <li>Find our dedicated helpline contacts for emergency, non-emergency, and technical
+                                        support.</li>
+                                    <li>Know our operating hours and the various ways to reach out for assistance.</li>
+                                </ul>
+                            </li>
+                            <li>Frequently Asked Questions (FAQs)
+                                <ul class="list-disc ml-6">
+                                    <li>Check our FAQs for quick answers to common queries.</li>
+                                    <li>Gain insights into troubleshooting common issues.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
 
-        <section class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">Contacting Us</h2>
-            <ol class="list-decimal ml-6 mb-4">
-                <li>Contact Form
-                    <ul class="list-disc ml-6">
-                        <li>Utilize our online contact form for specific inquiries.</li>
-                        <li>Receive prompt responses from our support team.</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
+                    <section class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Contacting Us</h2>
+                        <ol class="list-decimal ml-6 mb-4">
+                            <li>Contact Form
+                                <ul class="list-disc ml-6">
+                                    <li>Utilize our online contact form for specific inquiries.</li>
+                                    <li>Receive prompt responses from our support team.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
 
-        <section>
-            <h2 class="text-xl font-semibold mb-4">Your Feedback Matters</h2>
-            <p class="mb-4">We value your feedback! If you encounter any challenges or have suggestions for improvement, please let us know. Our commitment is to enhance your experience and provide the best possible assistance.</p>
-            <p class="mb-4">Thank you for choosing us as your trusted technological partner. Together, we're creating safer, more sustainable communities through innovative solutions.</p>
-        </section>
+                    <section>
+                        <h2 class="text-xl font-semibold mb-4">Your Feedback Matters</h2>
+                        <p class="mb-4">We value your feedback! If you encounter any challenges or have suggestions for
+                            improvement, please let us know. Our commitment is to enhance your experience and provide
+                            the best possible assistance.</p>
+                        <p class="mb-4">Thank you for choosing us as your trusted technological partner. Together, we're
+                            creating safer, more sustainable communities through innovative solutions.</p>
+                    </section>
                 </div>
             </div>
         </div>
@@ -548,6 +878,124 @@
 
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+
+    function fetchData() {
+        const apiEndpoint = "http://192.168.29.239:1500/";
+        fetch(apiEndpoint)
+            .then((response) => response.json())
+            .then((data) => {
+                document.querySelector(".gauge").style.setProperty("--percentage", 100 - data.current);
+                document.querySelector(".gauge1").style.setProperty("--percentage", 100 - data.humidity);
+                document.querySelector(".gauge2").style.setProperty("--percentage", 100 - data.light);
+                document.querySelector(".gauge3").style.setProperty("--percentage", 100 - data.power);
+                document.querySelector(".gauge4").style.setProperty("--percentage", 100 - data.temperature);
+                document.querySelector(".gauge5").style.setProperty("--percentage", 100 - data.voltage);
+                document.getElementById('val').textContent = `Current: ${data.current.toFixed(2)}Amp`;
+                document.getElementById('val1').textContent = `Humidity: ${data.humidity.toFixed(2)}%`;
+                document.getElementById('val2').textContent = `Light: ${data.light.toFixed(2)} lux`;
+                document.getElementById('val3').textContent = `Power: ${data.power.toFixed(2)} watts`;
+                document.getElementById('val4').textContent = `Temperature: ${data.temperature.toFixed(2)}°C`;
+                document.getElementById('val5').textContent = `Voltage: ${data.voltage.toFixed(2)} volts`;
+
+            })
+            .catch((error) => {
+                console.error("Error fetching data:", error);
+            });
+    }
+    fetchData();
+    setInterval(fetchData, 60000);
 </script>
+<!-- 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawCharts);
+
+    var weeklyData = [['Week', 'Power']];
+    var hourlyData = [['Hour', 'Power']];
+
+    function drawCharts() {
+        drawWeeklyChart();
+        drawHourlyChart();
+    }
+
+    function drawWeeklyChart() {
+        var data = google.visualization.arrayToDataTable(weeklyData);
+
+        var options = {
+            title: 'Power Consumption - Weekly',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('weekly_chart'));
+
+        chart.draw(data, options);
+    }
+
+    function drawHourlyChart() {
+        var data = google.visualization.arrayToDataTable(hourlyData);
+
+        var options = {
+            title: 'Power Consumption - Hourly',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('hourly_chart'));
+
+        chart.draw(data, options);
+    }
+
+    function fetchDataAndDrawCharts() {
+        const apiEndpoint = "http://192.168.29.239:1500/";
+        fetch(apiEndpoint)
+            .then((response) => response.json())
+            .then((sensorData) => {
+                var currentTime = new Date();
+                var currentWeek = getWeekNumber(currentTime);
+                var currentHour = currentTime.getHours();
+
+                // Update weekly data
+                updateChartData(weeklyData, currentWeek, sensorData.power);
+
+                // Update hourly data
+                updateChartData(hourlyData, currentHour, sensorData.power);
+
+                // Draw the updated charts
+                drawWeeklyChart();
+                drawHourlyChart();
+            })
+            .catch((error) => {
+                console.error("Error fetching data:", error);
+            });
+    }
+
+    function updateChartData(dataArray, label, value) {
+        var labelIndex = dataArray.findIndex(item => item[0] === label);
+
+        if (labelIndex !== -1) {
+            dataArray[labelIndex][1] += value;
+        } else {
+            dataArray.push([label, value]);
+        }
+    }
+
+    // Initial fetch and draw
+    fetchDataAndDrawCharts();
+
+    // Set interval to fetch data and update the charts periodically
+    setInterval(fetchDataAndDrawCharts, 60000); // Adjust the interval as needed
+
+    function getWeekNumber(d) {
+        d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+        d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+        var startOfYear = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+        var weekNumber = Math.ceil((((d - startOfYear) / 86400000) + 1) / 7);
+        return weekNumber;
+    }
+</script>
+-->
 <script src="../JS/script.js"></script>
+
 </html>

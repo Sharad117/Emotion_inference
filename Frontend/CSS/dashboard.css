@@ -157,3 +157,430 @@ button:hover {
     margin: 0;
     padding: 0;
   }
+
+/* --------------------------------------------Stats---------------------- */
+
+.gauge {
+    --percentage: 100;
+    --rotation: calc((100 - var(--percentage)) * 1.8deg);
+    position: relative;
+    border-radius: 50%/100% 100% 0 0;
+    background-color: var(--color, #f43e3e);
+    overflow: hidden;
+    margin: 7vw;
+}
+
+.gauge:before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+
+.gauge .chart {
+    overflow: hidden;
+}
+
+.gauge .mask {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    top: 40%;
+    background-color: #bee0eb;
+    border-radius: 50%/100% 100% 0 0;
+}
+
+.gauge .percentage {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: 0;
+    right: -1px;
+    background-color: var(--background, #fff);
+    transform: rotate(var(--rotation));
+    transform-origin: bottom center;
+    transition-duration: 600ms;
+}
+
+.gauge .value {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.gauge .min {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.gauge .max {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.gauge1 {
+    --percentage: 100;
+    --rotation: calc((100 - var(--percentage)) * 1.8deg);
+    position: relative;
+    border-radius: 50%/100% 100% 0 0;
+    background-color: var(--color, #f43e3e);
+    overflow: hidden;
+    margin: 7vw;
+}
+
+.gauge1:before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+
+.gauge1 .chart {
+    overflow: hidden;
+}
+
+.gauge1 .mask {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    top: 40%;
+    background-color: #bee0eb;
+    border-radius: 50%/100% 100% 0 0;
+}
+
+.gauge1 .percentage {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: 0;
+    right: -1px;
+    background-color: var(--background, #fff);
+    transform: rotate(var(--rotation));
+    transform-origin: bottom center;
+    transition-duration: 600ms;
+}
+
+.gauge1 .value {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.gauge1 .min {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.gauge1 .max {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.gauge2 {
+    --percentage: 100;
+    --rotation: calc((100 - var(--percentage)) * 1.8deg);
+    position: relative;
+    border-radius: 50%/100% 100% 0 0;
+    background-color: var(--color, #f43e3e);
+    overflow: hidden;
+    margin: 7vw;
+}
+
+.gauge2:before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+
+.gauge2 .chart {
+    overflow: hidden;
+}
+
+.gauge2 .mask {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    top: 40%;
+    background-color: #bee0eb;
+    border-radius: 50%/100% 100% 0 0;
+}
+
+.gauge2 .percentage {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: 0;
+    right: -1px;
+    background-color: var(--background, #fff);
+    transform: rotate(var(--rotation));
+    transform-origin: bottom center;
+    transition-duration: 600ms;
+}
+
+.gauge2 .value {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.gauge2 .min {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.gauge2 .max {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.gauge3 {
+    --percentage: 100;
+    --rotation: calc((100 - var(--percentage)) * 1.8deg);
+    position: relative;
+    border-radius: 50%/100% 100% 0 0;
+    background-color: var(--color, #f43e3e);
+    overflow: hidden;
+    margin: 7vw;
+}
+
+.gauge3:before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+
+.gauge3 .chart {
+    overflow: hidden;
+}
+
+.gauge3 .mask {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    top: 40%;
+    background-color: #bee0eb;
+    border-radius: 50%/100% 100% 0 0;
+}
+
+.gauge3 .percentage {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: 0;
+    right: -1px;
+    background-color: var(--background, #fff);
+    transform: rotate(var(--rotation));
+    transform-origin: bottom center;
+    transition-duration: 600ms;
+}
+
+.gauge3 .value {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.gauge3 .min {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.gauge3 .max {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.gauge4 {
+    --percentage: 100;
+    --rotation: calc((100 - var(--percentage)) * 1.8deg);
+    position: relative;
+    border-radius: 50%/100% 100% 0 0;
+    background-color: var(--color, #f43e3e);
+    overflow: hidden;
+    margin: 7vw;
+}
+
+.gauge4:before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+
+.gauge4 .chart {
+    overflow: hidden;
+}
+
+.gauge4 .mask {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    top: 40%;
+    background-color: #bee0eb;
+    border-radius: 50%/100% 100% 0 0;
+}
+
+.gauge4 .percentage {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: 0;
+    right: -1px;
+    background-color: var(--background, #fff);
+    transform: rotate(var(--rotation));
+    transform-origin: bottom center;
+    transition-duration: 600ms;
+}
+
+.gauge4 .value {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.gauge4 .min {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.gauge4 .max {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.gauge5 {
+    --percentage: 100;
+    --rotation: calc((100 - var(--percentage)) * 1.8deg);
+    position: relative;
+    border-radius: 50%/100% 100% 0 0;
+    background-color: var(--color, #f43e3e);
+    overflow: hidden;
+    margin: 7vw;
+}
+
+.gauge5:before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+
+.gauge5 .chart {
+    overflow: hidden;
+}
+
+.gauge5 .mask {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    top: 40%;
+    background-color: #bee0eb;
+    border-radius: 50%/100% 100% 0 0;
+}
+
+.gauge5 .percentage {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: 0;
+    right: -1px;
+    background-color: var(--background, #fff);
+    transform: rotate(var(--rotation));
+    transform-origin: bottom center;
+    transition-duration: 600ms;
+}
+
+.gauge5 .value {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.gauge5 .min {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.gauge5 .max {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+  .abc,.def {
+    display: flex;
+}
+.ghi {
+    display: flex;
+    margin-left: 15px;
+}
+
+#val {
+    margin-top: 211px;
+    margin-left: -265px;
+}
+#val1 {
+    margin-top: 211px;
+    margin-left: -263px;
+}
+
+#val2 {
+    margin-top: 211px;
+    margin-left: -254px;
+}
+#val3 {
+    margin-top: 211px;
+    margin-left: -263px;
+}
+#val4 {
+    margin-top: 211px;
+    margin-left: -280px;
+}
+#val5 {
+    margin-top: 211px;
+    margin-left: -267px;
+}
+
+.marker-content {
+    display: none;
+    width: 30vw;
+    height: 70vh;
+    background-color: white;
+    margin-top: -80vh;
+    z-index: 10000;
+    position: relative;
+    left: 100%;
+    transition: left 0.5s ease-in-out;
+  }
+  .slide-in {
+    left: 65vw;
+  }
+  .close-btn {
+    cursor: pointer;
+    position: relative;
+    left: 28vw;
+  }

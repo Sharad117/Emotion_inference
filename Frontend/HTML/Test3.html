@@ -1,0 +1,97 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawCharts);
+
+        var weeklyData = [['Week', 'Power']];
+        var hourlyData = [['Hour', 'Power']];
+
+        function drawCharts() {
+            drawWeeklyChart();
+            drawHourlyChart();
+        }
+
+        function drawWeeklyChart() {
+            var data = google.visualization.arrayToDataTable(weeklyData);
+
+            var options = {
+                title: 'Power Consumption - Weekly',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('weekly_chart'));
+
+            chart.draw(data, options);
+        }
+
+        function drawHourlyChart() {
+            var data = google.visualization.arrayToDataTable(hourlyData);
+
+            var options = {
+                title: 'Power Consumption - Hourly',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('hourly_chart'));
+
+            chart.draw(data, options);
+        }
+
+        function fetchDataAndDrawCharts() {
+            const apiEndpoint = "http://192.168.29.239:1500/";
+            fetch(apiEndpoint)
+                .then((response) => response.json())
+                .then((sensorData) => {
+                    var currentTime = new Date();
+                    var currentWeek = getWeekNumber(currentTime);
+                    var currentHour = currentTime.getHours();
+
+                    // Update weekly data
+                    updateChartData(weeklyData, currentWeek, sensorData.power);
+
+                    // Update hourly data
+                    updateChartData(hourlyData, currentHour, sensorData.power);
+
+                    // Draw the updated charts
+                    drawWeeklyChart();
+                    drawHourlyChart();
+                })
+                .catch((error) => {
+                    console.error("Error fetching data:", error);
+                });
+        }
+
+        function updateChartData(dataArray, label, value) {
+            var labelIndex = dataArray.findIndex(item => item[0] === label);
+
+            if (labelIndex !== -1) {
+                dataArray[labelIndex][1] += value;
+            } else {
+                dataArray.push([label, value]);
+            }
+        }
+
+        // Initial fetch and draw
+        fetchDataAndDrawCharts();
+
+        // Set interval to fetch data and update the charts periodically
+        setInterval(fetchDataAndDrawCharts, 60000); // Adjust the interval as needed
+
+        function getWeekNumber(d) {
+            d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+            d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+            var startOfYear = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+            var weekNumber = Math.ceil((((d - startOfYear) / 86400000) + 1) / 7);
+            return weekNumber;
+        }
+    </script>
+</head>
+<body>
+    <div id="weekly_chart" style="width: 900px; height: 500px"></div>
+    <div id="hourly_chart" style="width: 900px; height: 500px"></div>
+</body>
+</html>
