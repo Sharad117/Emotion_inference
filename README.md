@@ -8,9 +8,7 @@ This repository hosts the codebase and details for an integrated system that com
 - **Web Technologies (HTML, CSS, JS)**
 - **Backend (Node.js, Firebase)**
 - **Microcontrollers (ESP32, ESPNow Protocol)**
-- **Speech Inference Model (Faster Whisper, DistilBERT)**
-- **ML Models (Custom Algorithms, PIR Sensor Data)**
-- **Audio Processing (Audio Denoiser)**
+- **ML Models (n_gram vectorizer, logistic regression model)**
 - **Data Communication (Raspberry Pi, ESP32)**
 - **Data Storage and Web Interface (Firebase, Website)**
 
@@ -26,7 +24,7 @@ This repository hosts the codebase and details for an integrated system that com
   - Automated alerts to notify authorities upon detecting alarming phrases.
 
 ## ML Model
-- Utilizes PVCheetah API for audio-to-text transcription.
+- Using Python's Speech_Recognition module for speech to text conversion.
 - Logistic regression model for inference, based on an n-gram approach for vectorization to determine if police intervention is needed.
 
 ## Benefits
