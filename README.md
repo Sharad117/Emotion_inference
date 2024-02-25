@@ -10,7 +10,7 @@ This repository hosts the codebase and details for an integrated system that com
 - **Microcontrollers (ESP32, ESPNow Protocol)**
 - **ML Models (n_gram vectorizer, logistic regression model)**
 - **Data Communication (Raspberry Pi, ESP32)**
-- **Data Storage and Web Interface (Firebase, Website)**
+- **Data Storage and Web Interface (Websocket, Website)**
 
 ## Features
 - **Automated Street Lights:**
