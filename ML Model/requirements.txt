@@ -1,8 +1,6 @@
- SentencePiece
- librosa
- torch
- transformers
- soundfile
  pandas
- sklearn
- pvcheetah
+ scikit-learn
+ SpeechRecognition
+ socket
+ struct
+ wave
