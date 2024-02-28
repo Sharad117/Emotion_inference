@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 # Mosquitto MQTT Settings
-mqtt_broker_address = "192.168.204.126"  # Replace with your actual MQTT broker IP
+mqtt_broker_address = "IP"  # Replace with your actual MQTT broker IP
 mqtt_topic = "trial/esp"
 
 received_data = {}  # Store received data here
@@ -21,7 +21,7 @@ def on_message(client, userdata, message):
 
 # Set up MQTT client
 mqtt_client = mqtt.Client()
-mqtt_client.username_pw_set("test","123456789")
+mqtt_client.username_pw_set("USER","PASSWD")
 mqtt_client.on_message = on_message
 
 # Connect to the MQTT broker
@@ -36,4 +36,4 @@ def get_data():
     return jsonify(received_data)
 
 if __name__ == '__main__':
-    app.run(host='192.168.204.126', port=1500)
+    app.run(host='IP', port=1500)
