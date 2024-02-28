@@ -8,9 +8,9 @@
 // uint8_t transmitBuffer[AUDIO_BUFFER_MAX];
 // uint32_t bufferPointer = 0;
 
-// const char* ssid     = "Galaxy";
-// const char* password = "Trinetra*281001";
-// const char* host     = "192.168.204.126";
+// const char* ssid     = "SSID";
+// const char* password = "Passd";
+// const char* host     = "IP";
 
 // bool transmitNow = false;
 
@@ -78,12 +78,12 @@ uint8_t audioBuffer[AUDIO_BUFFER_MAX];
 uint8_t transmitBuffer[AUDIO_BUFFER_MAX];
 uint32_t bufferPointer = 0;
 
-const char* ssid     = "Galaxy";
-const char* password = "Trinetra*281001";
-const char* host     = "192.168.204.126";
-// const char* ssid = "JioFiber-LKsx2";
-// const char* password = "Oiciecoh5eeth2me";
-// const char* host = "192.168.29.239";
+const char* ssid     = "SSID";
+const char* password = "Passed";
+const char* host     = "IP";
+// const char* ssid = "SSID";
+// const char* password = "Passwd";
+// const char* host = "IP";
 
 bool transmitNow = false;
 
@@ -175,9 +175,9 @@ void reconnect() {
 // #include <WiFi.h>
 // #include <WiFiClient.h>
 
-// const char* ssid     = "Galaxy";
-// const char* password = "Trinetra*281001";
-// const char* host     = "192.168.204.126";
+// const char* ssid     = "SSID";
+// const char* password = "Passwd";
+// const char* host     = "IP";
 // const int port = 1883;  // Use the port that your receiving device is listening on
 
 // void setup() {
