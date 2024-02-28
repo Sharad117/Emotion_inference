@@ -17,12 +17,12 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe("trial")
 # Set up MQTT client
 mqtt_client = mqtt.Client()
-mqtt_client.username_pw_set("test","123456789")
+mqtt_client.username_pw_set("USER","PASSWD")
 mqtt_client.on_connect = on_connect
 mqtt_client.on_message = on_message
 
 # Connect to the MQTT broker
-mqtt_broker_address = "192.168.29.137"  # Replace with your actual MQTT broker IP or hostname
+mqtt_broker_address = "IP"  # Replace with your actual MQTT broker IP or hostname
 mqtt_topic = "audio"  # Replace with your actual MQTT topic
 # mqtt_client.connect(mqtt_broker_address)
 mqtt_client.connect(mqtt_broker_address, 1883, 60)
